@@ -14,7 +14,7 @@ export default function Game({ player, reactRoot, callback = playGame }) {
 
   return (
     <div>
-      <h1>Juguemos! {player ? " " + player.username : null}!</h1>
+      <h1>!Juguemos {player ? " " + player.username : null}!</h1>
       <div className="game">
         <canvas
           id="info"

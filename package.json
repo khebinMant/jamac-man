@@ -1,5 +1,5 @@
 {
-  "name": "pacman",
+  "name": "jamac-man",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -8,6 +8,7 @@
     "ajv-keywords": "^5.1.0",
     "axios": "^1.4.0",
     "howler": "^2.2.3",
+    "jamac-man": "file:",
     "pacman": "file:",
     "primereact": "^10.8.4",
     "react": "^18.2.0",

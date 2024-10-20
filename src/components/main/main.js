@@ -45,7 +45,7 @@ export default function Main({ reactRoot, user }) {
     return user ? (
       <p className="text-header">Hola de Nuevo ! {user.username}!</p>
     ) : (
-      <p className="text-header">JAMAC-MAN!</p>
+      <p className="text-header">JAMA-CMAN!</p>
     );
   };
 
