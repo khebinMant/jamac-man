@@ -49,22 +49,22 @@ export default function Main({ reactRoot, user }) {
     );
   };
 
-  const buttons = () => {
-    return user ? (
-      <button className="logout-button" onClick={handleLogout}>
-        Log out
-      </button>
-    ) : (
-      <div>
-        <a href="/login">
-          <button className="login-button">Log in</button>
-        </a>
-        <a href="/signup">
-          <button className="signup-button">Sign up</button>
-        </a>
-      </div>
-    );
-  };
+  // const buttons = () => {
+  //   return user ? (
+  //     <button className="logout-button" onClick={handleLogout}>
+  //       Log out
+  //     </button>
+  //   ) : (
+  //     <div>
+  //       <a href="/login">
+  //         <button className="login-button">Log in</button>
+  //       </a>
+  //       <a href="/signup">
+  //         <button className="signup-button">Sign up</button>
+  //       </a>
+  //     </div>
+  //   );
+  // };
 
   const signupInstructions = () => {
     return user ? null : (
