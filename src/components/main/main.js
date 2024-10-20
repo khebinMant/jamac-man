@@ -25,10 +25,10 @@ export default function Main({ reactRoot, user }) {
     });
   }, [theme]);
 
-  const handleLogout = () => {
-    localStorage.removeItem("token");
-    window.location.reload();
-  };
+  // const handleLogout = () => {
+  //   localStorage.removeItem("token");
+  //   window.location.reload();
+  // };
 
   const handleSubmit = () => {
     const player = user ? user : undefined;
