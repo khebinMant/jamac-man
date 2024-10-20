@@ -49,6 +49,11 @@ export default function Main({ reactRoot, user }) {
     );
   };
 
+  // const handleLogout = () => {
+  //   localStorage.removeItem("token");
+  //   window.location.reload();
+  // };
+
   // const buttons = () => {
   //   return user ? (
   //     <button className="logout-button" onClick={handleLogout}>

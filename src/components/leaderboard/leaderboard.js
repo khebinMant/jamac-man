@@ -4,6 +4,7 @@ import React from "react";
 import Game from "../game/game";
 import Main from "../main/main";
 import { useEffect, useState } from "react";
+import { Button } from "primereact/button";
 
 const scoresUrl = process.env.REACT_APP_BACKEND_URL
   ? `${process.env.REACT_APP_BACKEND_URL}/scores`
@@ -54,11 +55,11 @@ export default function Leaderboard({ variables }) {
 
   return (
     <div className="leaderboard">
-      <h1>Game Over</h1>
-      <h4>You scored {variables.score} points</h4>
+      <h1>Juego Terminado</h1>
+      {/* <h4>You scored {variables.score} points</h4> */}
       {error ? (
         <p className="error" data-testid="error">
-          Oops, something went wrong!
+          Vuelve a Intentarlo!
         </p>
       ) : (
         <table className="list">
@@ -66,7 +67,7 @@ export default function Leaderboard({ variables }) {
             <tbody>
               <tr>
                 <td className="wait-message" data-testid="wait-message">
-                  Please wait a moment...
+                  Porfavor espera un momento...
                 </td>
               </tr>
             </tbody>
@@ -90,13 +91,9 @@ export default function Leaderboard({ variables }) {
           )}
         </table>
       )}
-      <div className="buttons">
-        <button className="play-again" onClick={handlePlayAgain}>
-          Play Again
-        </button>
-        <button className="home" onClick={handleChangePlayer}>
-          Home
-        </button>
+      <div className="buttons finish">
+        <Button  className="play-again" label="Jugar de Nuevo!" icon="pi pi-check" onClick={handlePlayAgain}/>
+        <Button  className="play-again" label="Volver" icon="pi pi-check" onClick={handleChangePlayer}/>
       </div>
     </div>
   );
