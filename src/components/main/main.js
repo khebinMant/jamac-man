@@ -5,7 +5,6 @@ import Game from "../game/game";
 import { Howl } from "howler";
 import { Button } from 'primereact/button';
 import { InputText } from "primereact/inputtext";
-import { Message } from "primereact/message";
 import { InputNumber } from "primereact/inputnumber";
 
 export default function Main({ reactRoot, user }) {
