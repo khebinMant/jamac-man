@@ -4,16 +4,13 @@ import "./index.css";
 import { BrowserRouter } from "react-router-dom";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
-import { PrimeReactProvider, PrimeReactContext } from 'primereact/api';
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-   <PrimeReactProvider>
     <BrowserRouter>
       <App />
     </BrowserRouter>
-   </PrimeReactProvider>
   </React.StrictMode>
 );
 
