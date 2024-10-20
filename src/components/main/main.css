@@ -1,0 +1,46 @@
+button {
+  font-size: 3vmin;
+  border-radius: 0.5vmin;
+  padding: 0.3vmin;
+  border: 0.3vmin solid #000000;
+  cursor: pointer;
+}
+
+.logout-button,
+.login-button,
+.signup-button {
+  background-color: rgb(255, 255, 255);
+  color: yellow;
+}
+
+.login-button {
+  margin-right: 5px;
+}
+
+.signup-button {
+  margin-left: 5px;
+}
+
+.title-gif {
+  margin: auto;
+  width: 90%;
+  max-width: 80vmin;
+  max-height: 100vmin;
+}
+
+.name-error {
+  color: rgb(251, 72, 72);
+}
+
+.signup-instructions,
+.instructions {
+  color: white;
+  margin: auto;
+  padding: 2vmin;
+}
+
+.text-header{
+  color: cyan;
+  -webkit-text-stroke: 1px black;
+  font-size: 10vw;
+}
