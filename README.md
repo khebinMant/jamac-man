@@ -51,11 +51,11 @@
         <li><a href="#💾-installation">Instalación</a></li>
       </ul>
     </li>
-    <li><a href="#⏩-usage">Usage</a></li>
-    <li><a href="#🗺-roadmap">Roadmap</a></li>
-    <li><a href="#🙌-contributing">Contribuir</a></li>
-    <li><a href="#📜-license">Licencia</a></li>
-    <li><a href="#📫-contact">Contacto</a></li>
+    <li><a href="#-usage">Usage</a></li>
+    <li><a href="#-roadmap">Roadmap</a></li>
+    <li><a href="#-contributing">Contribuir</a></li>
+    <li><a href="#-license">Licencia</a></li>
+    <li><a href="#-contact">Contacto</a></li>
     <li><a href="#ℹ️-acknowledgments">Acknowledgments</a></li>
   </ol>
 </details>
