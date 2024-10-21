@@ -40,13 +40,13 @@
   <summary>Table of Contents</summary>
   <ol>
     <li>
-      <a href="#🎶-about-the-project">Acerca del proyecto</a>
+      <a href="#-about-the-project">🎶Acerca del proyecto</a>
       <ul>
-        <li><a href="#🔨-built-with">Contruido con</a></li>
+        <li><a href="#-built-with">🔨Contruido con</a></li>
       </ul>
     </li>
     <li>
-      <a href="#🤸-getting-started">¡Empezemos!</a>
+      <a href="#-getting-started">🤸¡Empezemos!</a>
       <ul>
         <li><a href="#💾-installation">Instalación</a></li>
       </ul>
