@@ -65,7 +65,7 @@
 <hr/>
 <br/>
 
-# 📱 About The Project
+# 📱 Acerca de nuestro proyecto
 
 Este proyecto de programación se enfoca en el desarrollo de un ecommerce de celulares. El objetivo es crear una plataforma en línea fácil de usar y accesible para los clientes, donde puedan navegar y comprar dispositivos móviles de diferentes marcas y modelos.
 
@@ -77,14 +77,14 @@ El proyecto también incluirá un panel de administración para que el equipo de
 
 En resumen, este proyecto de programación brindará a los clientes una experiencia de compra en línea fluida y segura para comprar sus dispositivos móviles, y al mismo tiempo, brindará una solución eficiente y fácil de usar para el equipo de ecommerce.
 
-### What can you do?
+### ¿Que puedes hacer?
 
 - Puedes explorar los porductos y servicios más nuevos y de última demanda. ✔📱🎇
 - Buscar por medio de varios filtros el producto ideal para ti.
 - Crear tu cuenta e ingresar con tus credenciales para poder realizar acciones específicas.
 - Comprar, cancelar y confirmar tu pedido en cualquier momento.
 
-# 🔨 Frontend Built with
+# 🔨 Frontend Contruido con
 
 - ![react](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
 
@@ -100,29 +100,29 @@ En resumen, este proyecto de programación brindará a los clientes una experien
 
 <!-- GETTING STARTED -->
 
-# 🤸 Getting Started
+# 🤸 Empecemos!
 
-It's necessary to have git 😺 in your computer.
+Es necesario tener Git en tu computadora 😺.
 
-### 💾 🗄️ Installation
+### 💾 🗄️ Instalación
 
 ```bash
 # Clone Repository
-$ git clone https://github.com/joseandresgavilanes/kruger-ecommerce
+$ git clone https://github.com/khebinMant/jamac-man
 # Go to server folder
-$ cd kruger-ecommerce
+$ cd jamac-man
 # Install Dependencies
 $ npm i
 # Run Aplication with create react app
-$ npm run dev
+$ npm start
 ```
 
 <!-- USAGE EXAMPLES -->
 <br/>
 
-# ⏩ Usage
+# ⏩ Uso
 
-  <h1 style="font-size: 60px; font-weight: 700" align="center">Customer</h1>
+  <h1 style="font-size: 60px; font-weight: 700" align="center">Jugador</h1>
 
 - En nuestra página puedes explorar las marcas y modelos de teléfonos móviles que ofrecemos, incluyendo imágenes de alta calidad y descripciones detalladas sobre nuestra empresa. Todo esto lo podrás hacer sin iniciar sesión.
 
@@ -143,7 +143,7 @@ $ npm run dev
 
 <h4 align="center">
 	🚧 Status: Building 🚀  🚧
-  <p align="center">https://kruger-cell.vercel.app /</p>
+  <p align="center">https://jamac-man.netlify.app//</p>
 
 </h4>
 <br/>
@@ -164,7 +164,7 @@ $ npm run dev
 <!-- CONTRIBUTING -->
 <br/>
 
-# 🙌 Contributing
+# 🙌 Contribuciones
 
 Contribuciones son lo que hacen de la comunidad de código abierto un lugar impresionante para aprender, inspirarse y crear. Cualquier contribución que hagas es muy apreciada.
 
