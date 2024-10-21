@@ -51,7 +51,7 @@
         <li><a href="#💾-installation">Instalación</a></li>
       </ul>
     </li>
-    <li><a href="#⏩-usage">Como usar</a></li>
+    <li><a href="#⏩-usage">Usage</a></li>
     <li><a href="#🗺-roadmap">Roadmap</a></li>
     <li><a href="#🙌-contributing">Contribuir</a></li>
     <li><a href="#📜-license">Licencia</a></li>
