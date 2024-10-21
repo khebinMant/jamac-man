@@ -4,7 +4,7 @@
     <img src="./public/images/logo.png" alt="Logo" width="300" height="180">
   </a>
 
-  <h1 style="font-size: 60px; font-weight: 700" align="center">Kruger Cell</h1>
+  <h1 style="font-size: 60px; font-weight: 700" align="center">Jama CMan</h1>
 
 ![react](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
 ![redux](https://img.shields.io/badge/Redux-593D88?style=for-the-badge&logo=redux&logoColor=white)
@@ -15,21 +15,21 @@
 
 <h4 align="center">
 
-  <p align="center">https://kruger-cell.vercel.app</p>
+  <p align="center">https://jamac-man.netlify.app/</p>
 
 </h4>
 
 ---
 
   <p align="center">
-    The perfect phone and services for you
+    Un clásico de toda la vida mientras esperas
     <br />
     <br />
-    <a href="https://github.com/joseandresgavilanes/spotify/issues">View Demo</a>
+    <a href="https://github.com/khebinMant">Probar Demo</a>
     ·
-    <a href="https://github.com/joseandresgavilanes/spotify/issues">Report Bug</a>
+    <a href="https://github.com/khebinMant">Reportar un error</a>
     ·
-    <a href="https://github.com/joseandresgavilanes/spotify/issues">Request Feature</a>
+    <a href="https://github.com/khebinMant">Solicitar una caracteristica nueva</a>
   </p>
 </div>
 
@@ -40,22 +40,22 @@
   <summary>Table of Contents</summary>
   <ol>
     <li>
-      <a href="#🎶-about-the-project">About The Project</a>
+      <a href="#🎶-about-the-project">Acerca del proyecto</a>
       <ul>
-        <li><a href="#🔨-built-with">Built with</a></li>
+        <li><a href="#🔨-built-with">Contruido con</a></li>
       </ul>
     </li>
     <li>
-      <a href="#🤸-getting-started">Getting Started</a>
+      <a href="#🤸-getting-started">¡Empezemos!</a>
       <ul>
-        <li><a href="#💾-installation">Installation</a></li>
+        <li><a href="#💾-installation">Instalación</a></li>
       </ul>
     </li>
-    <li><a href="#⏩-usage">Usage</a></li>
+    <li><a href="#⏩-usage">Como usar</a></li>
     <li><a href="#🗺-roadmap">Roadmap</a></li>
-    <li><a href="#🙌-contributing">Contributing</a></li>
-    <li><a href="#📜-license">License</a></li>
-    <li><a href="#📫-contact">Contact</a></li>
+    <li><a href="#🙌-contributing">Contribuir</a></li>
+    <li><a href="#📜-license">Licencia</a></li>
+    <li><a href="#📫-contact">Contacto</a></li>
     <li><a href="#ℹ️-acknowledgments">Acknowledgments</a></li>
   </ol>
 </details>
