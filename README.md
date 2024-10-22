@@ -1,7 +1,7 @@
 <br />
 <div align="center">
   <a href="https://github.com">
-    <img src="./public/jama/jama_start.gif" alt="Logo" width="300" height="180">
+    <img src="./public/jama/jama_start.gif" alt="Logo" width="180" height="300">
   </a>
 
   <h1 style="font-size: 60px; font-weight: 700" align="center">Jama CMan</h1>
