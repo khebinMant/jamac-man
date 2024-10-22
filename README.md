@@ -1,7 +1,7 @@
 <br />
 <div align="center">
   <a href="https://github.com">
-    <img src="./public/images/logo.png" alt="Logo" width="300" height="180">
+    <img src="./public/jama/jama_start.png" alt="Logo" width="300" height="180">
   </a>
 
   <h1 style="font-size: 60px; font-weight: 700" align="center">Jama CMan</h1>
@@ -143,23 +143,20 @@ $ npm start
 
 <h4 align="center">
 	🚧 Status: Building 🚀  🚧
-  <p align="center">https://jamac-man.netlify.app//</p>
+  <p align="center">https://jamac-man.netlify.app/</p>
 
 </h4>
 <br/>
 
 # 🗺 Roadmap
 
-- [✔] Seleccionar Tema para nuestra aplicación ecommerce
+- [✔] Seleccionar Tema para nuestro juego customizados
 - [✔] Realizar una lluvia de ideas para definir la funcionalidad y objetivos de ejecución.
 - [✔] Decidir el Modelo Visual a implementar
 - [✔] Establecer la metodología de trabajo sobre Github
 - [✔] Definir la estructura de carpetas dentro de la aplicación
 - [✔] Estandarizar el nombramiento de componentes y clases dentro del HTML
 - [✔] Generar componentes con la Api seleccionada
-- [✔] Mostrar la información de los productos (celulares y servicios) disponibles
-- [✔] Implementar un componente de búsqueda
-- [✔] Ofrecer un carrito de compras personalizado
 
 <!-- CONTRIBUTING -->
 <br/>
@@ -168,11 +165,11 @@ $ npm start
 
 Contribuciones son lo que hacen de la comunidad de código abierto un lugar impresionante para aprender, inspirarse y crear. Cualquier contribución que hagas es muy apreciada.
 
-1. Fork the Project
-2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the Branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
+1. Forkear el Proyecto
+2. Crear la nueva rama para el feature (`git checkout -b feature/AmazingFeature`)
+3. Commit tus cambios (`git commit -m 'Add some AmazingFeature'`)
+4. Push tu rama (`git push origin feature/AmazingFeature`)
+5. Abrir un Pull Request
 
 <br/>
 
@@ -183,7 +180,7 @@ Contribuciones son lo que hacen de la comunidad de código abierto un lugar impr
 Jama - CMan esa distribuida bajo los terminos de Apache License Version 2.0. La version completa de la licencia esta disponible en el archivo [LICENSE](LICENSE) de este repositorio. Cualquier contribucion a este proyecto sera licenciada bajo la licencia Apache License Version 2.0.
 
 Especial agradecimiento al código Forkeado de jmcnally17
-<a href="https://github.com/jmcnally17/pacman-client-react" target="_blank"><img src="" target="_blank"></a>
+<a href="https://github.com/jmcnally17/pacman-client-react" target="_blank">jmcnally17 PACMAN</a>
 
 
 <br/>
