@@ -192,7 +192,7 @@ Kruger Cell esa distribuida bajo los terminos de Apache License Version 2.0. La 
 <sub><b>Kevin Mantilla</b></sub>
 <br />
 
-[![linkedin][linkedin.js]][linkedin3-url] [![github][github.js]][github3-url]
+[![linkedin][linkedin.js]][linkedin-url] [![github][github.js]][github3-url]
 
 <hr/>
 
