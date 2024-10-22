@@ -180,7 +180,11 @@ Contribuciones son lo que hacen de la comunidad de código abierto un lugar impr
 
 # 📜 Licencia
 
-Kruger Cell esa distribuida bajo los terminos de Apache License Version 2.0. La version completa de la licencia esta disponible en el archivo [LICENSE](LICENSE) de este repositorio. Cualquier contribucion a este proyecto sera licenciada bajo la licencia Apache License Version 2.0.
+Jama - CMan esa distribuida bajo los terminos de Apache License Version 2.0. La version completa de la licencia esta disponible en el archivo [LICENSE](LICENSE) de este repositorio. Cualquier contribucion a este proyecto sera licenciada bajo la licencia Apache License Version 2.0.
+
+Especial agradecimiento al código Forkeado de jmcnally17
+<a href="https://github.com/jmcnally17/pacman-client-react" target="_blank"><img src="" target="_blank"></a>
+
 
 <br/>
 <!-- CONTACT -->
