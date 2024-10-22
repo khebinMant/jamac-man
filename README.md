@@ -67,15 +67,11 @@
 
 # 📱 Acerca de nuestro proyecto
 
-Este proyecto de programación se enfoca en el desarrollo de un ecommerce de celulares. El objetivo es crear una plataforma en línea fácil de usar y accesible para los clientes, donde puedan navegar y comprar dispositivos móviles de diferentes marcas y modelos.
+"Jama-Cman" es un divertido juego inspirado en el clásico Pac-Man, pero con un giro creativo: en lugar de controlar al icónico personaje amarillo, ahora eres un pez en un mundo submarino lleno de desafíos.
 
-La plataforma incluirá una página principal que muestre los productos destacados y una sección de búsqueda avanzada para ayudar a los clientes a encontrar el teléfono que desean. Cada producto tendrá su propia página con detalles completos sobre las especificaciones técnicas, imágenes y opiniones de los clientes.
+En este juego, deberás guiar a tu pez a través de laberintos acuáticos mientras evitas a depredadores y recolectas tesoros marinos. El objetivo es navegar estratégicamente por los niveles, recoger la mayor cantidad de recompensas posibles y llegar al final sin ser atrapado. A medida que avanzas, los niveles se vuelven más complicados, con nuevos obstáculos y enemigos que pondrán a prueba tu habilidad y reflejos.
 
-Además, se implementará un carrito de compras para que los clientes puedan agregar los productos que desean comprar y proceder con el pago en línea a través de una pasarela segura. También se incluirán opciones de envío y seguimiento del paquete para que los clientes puedan monitorear el progreso de su compra.
-
-El proyecto también incluirá un panel de administración para que el equipo de ecommerce pueda administrar el catálogo de productos, procesar los pedidos y monitorear las estadísticas de la tienda en línea.
-
-En resumen, este proyecto de programación brindará a los clientes una experiencia de compra en línea fluida y segura para comprar sus dispositivos móviles, y al mismo tiempo, brindará una solución eficiente y fácil de usar para el equipo de ecommerce.
+Con gráficos coloridos, una jugabilidad fluida y un toque de nostalgia, "Jama-Cman" ofrece una experiencia emocionante para jugadores de todas las edades. ¿Listo para sumergirte en esta aventura submarina?
 
 ### ¿Que puedes hacer?
 
