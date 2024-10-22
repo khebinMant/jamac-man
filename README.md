@@ -75,10 +75,11 @@ Con gráficos coloridos, una jugabilidad fluida y un toque de nostalgia, "Jama-C
 
 ### ¿Que puedes hacer?
 
-- Puedes explorar los porductos y servicios más nuevos y de última demanda. ✔📱🎇
-- Buscar por medio de varios filtros el producto ideal para ti.
-- Crear tu cuenta e ingresar con tus credenciales para poder realizar acciones específicas.
-- Comprar, cancelar y confirmar tu pedido en cualquier momento.
+En "Jama - Cman", puedes disfrutar de una emocionante aventura submarina con muchas opciones para personalizar tu experiencia de juego:
+
+- Explorar el mundo submarino: Navega por coloridos laberintos acuáticos mientras recolectas tesoros marinos y evitas a los depredadores. 🌊🐠💎
+- Personaliza tu experiencia con diferentes modos de dificultad y entornos únicos.
+- Jugar, pausar y reanudar: Comienza una partida en cualquier momento, pausa cuando lo necesites y retoma el juego sin perder tu progreso.
 
 # 🔨 Frontend construido con
 
