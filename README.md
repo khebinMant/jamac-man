@@ -37,7 +37,7 @@
 
 <br/>
 <details>
-  <summary>Table of Contents</summary>
+  <summary>Tabla de Contenidos</summary>
   <ol>
     <li>
       <a href="#-about-the-project">🎶Acerca del proyecto</a>
@@ -84,7 +84,7 @@ En resumen, este proyecto de programación brindará a los clientes una experien
 - Crear tu cuenta e ingresar con tus credenciales para poder realizar acciones específicas.
 - Comprar, cancelar y confirmar tu pedido en cualquier momento.
 
-# 🔨 Frontend Contruido con
+# 🔨 Frontend construido con
 
 - ![react](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
 
@@ -178,32 +178,15 @@ Contribuciones son lo que hacen de la comunidad de código abierto un lugar impr
 
 <!-- LICENSE -->
 
-# 📜 License
+# 📜 Licencia
 
 Kruger Cell esa distribuida bajo los terminos de Apache License Version 2.0. La version completa de la licencia esta disponible en el archivo [LICENSE](LICENSE) de este repositorio. Cualquier contribucion a este proyecto sera licenciada bajo la licencia Apache License Version 2.0.
 
 <br/>
 <!-- CONTACT -->
 
-# 📫 Contact
+# 📫 Contacto
 
-<img style="border-radius: 50% !important;" src="./public/images/pepe.jpg" width="100px;" alt="photo author"/>
-
-<sub><b>José Andrés Gavilanes - Smiley</b></sub>
-<br />
-
-[![linkedin][linkedin.js]][linkedin-url] [![github][github.js]][github-url]
-
-<hr/>
-
-<img style="border-radius: 50% !important;" src="https://avatars.githubusercontent.com/u/52118245?v=4" width="100px;" alt="photo author"/>
-
-<sub><b>Kenan Al-jaber</b></sub>
-<br />
-
-[![linkedin][linkedin.js]][linkedin2-url] [![github][github.js]][github2-url]
-
-<hr/>
 <img style="border-radius: 50% !important;" src="https://avatars.githubusercontent.com/u/33032880?v=4" width="100px;" alt="photo author"/>
 
 <sub><b>Kevin Mantilla</b></sub>
@@ -221,27 +204,14 @@ Kruger Cell esa distribuida bajo los terminos de Apache License Version 2.0. La 
 
 <table>
     <tbody>
-        <tr>
-        <td align="center"><a href="https://github.com/joseandresgavilanes"><img src="./public/images/pepe.jpg" width="100px;" alt="Alexander Cangas"/><br /><sub><b>Jose Andres Gavilanes</b></sub></a><br /><a href="https://github.com/joseandresgavilanes" title="Code">💻 Desarrollador</a></td>
-        </tr>
 <tr>
-        <td align="center"><a href="https://github.com/joseandresgavilanes"><img src="https://avatars.githubusercontent.com/u/33032880?v=4" width="100px;" alt="Alexander Cangas"/><br /><sub><b>Kevin Mantilla</b></sub></a><br /><a href="https://github.com/joseandresgavilanes" title="Code">💻 Desarrollador</a></td>
+        <td align="center"><a href="https://github.com/khebinMant"><img src="https://avatars.githubusercontent.com/u/33032880?v=4" width="100px;" alt="Kevin Mantilla"/><br /><sub><b>Kevin Mantilla</b></sub></a><br /><a href="https://github.com/khebinMant" title="Code">💻 Desarrollador Full Stack</a></td>
         </tr>
         <tr>
-        <td align="center"><a href="https://github.com/joseandresgavilanes"><img src="https://avatars.githubusercontent.com/u/52118245?v=4" width="100px;" alt="Alexander Cangas"/><br /><sub><b>Kenan Al-jaber</b></sub></a><br /><a href="https://github.com/joseandresgavilanes" title="Code">💻 Desarrollador</a></td>
-        </tr>
-        <br/>
-        <tr>
-            <td align="center"><a href="https://github.com/Juanse7793"><img src="https://avatars.githubusercontent.com/u/96317674?v=4" width="100px;" alt="Yuval Hazaz"/><br /><sub><b>Juan Sebastian Sotomayor</b></sub></a><br /><a href="https://github.com/Juanse7793" title="Code">FrontEnd Kruger Mentor</a></td>
-        </tr>
     </tbody>
 </table>
 
 [linkedin.js]: https://img.shields.io/badge/-LinkedIn-1C82AD?logo=LinkedIn
-[linkedin-url]: https://www.linkedin.com/in/jose-andres-gavilanes-2954691b5/1
-[linkedin2-url]: https://www.linkedin.com/in/jose-andres-gavilanes-2954691b5/
-[linkedin3-url]: https://www.linkedin.com/in/jose-andres-gavilanes-2954691b5/
+[linkedin-url]: https://ec.linkedin.com/in/kevin-alexander-mantilla-3238a5213?trk=people-guest_people_search-card
 [github.js]: https://img.shields.io/badge/-GitHub-181717?logo=GitHub
-[github-url]: https://github.com/joseandresgavilanes
-[github2-url]: https://github.com/KenanAljaber
-[github3-url]: https://github.com/khebinSd
+[github3-url]: https://github.com/khebinMant
