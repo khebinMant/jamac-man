@@ -121,17 +121,7 @@ $ npm start
 
   <h1 style="font-size: 60px; font-weight: 700" align="center">Jugador</h1>
 
-- En nuestra página puedes explorar las marcas y modelos de teléfonos móviles que ofrecemos, incluyendo imágenes de alta calidad y descripciones detalladas sobre nuestra empresa. Todo esto lo podrás hacer sin iniciar sesión.
-
-- Ofrecemos promociones y descuentos en los productos y servicios que vendemos.
-
-- Proporcionar información sobre los planes de servicios de telefonía móvil que ofrecemos, como tarifas, cobertura, y opciones de contrato.
-
-![Kruger Cell - Google Chrome 2023-02-10 12-39-11](https://user-images.githubusercontent.com/76002851/218163080-04b8e5ff-4390-4b65-8d95-d2b68aff1acd.gif)
-
-- Tenemos varias pestañas por las cuales podrás navegar y enterarte más de los que nuestra página ofrece.
-
-![Kruger Cell - Google Chrome 2023-02-10 12-39-50](https://user-images.githubusercontent.com/76002851/218163795-c94efff5-62ec-4e52-a874-9f75bb3cdfb5.gif)
+- En nuestro juego puedes registrar una información previa antes de empezar a jugar, una vez completado a divertirse!
 
 <!-- ROADMAP -->
 <br/>
