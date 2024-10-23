@@ -15,7 +15,7 @@
 
 <h4 align="center">
 
-  <p align="center">https://jamac-man.netlify.app/</p>
+  <p align="center">https://jama-cman.netlify.app/</p>
 
 </h4>
 
@@ -130,7 +130,7 @@ $ npm start
 
 <h4 align="center">
 	🚧 Status: Building 🚀  🚧
-  <p align="center">https://jamac-man.netlify.app/</p>
+  <p align="center">https://jama-cman.netlify.app/</p>
 
 </h4>
 <br/>
