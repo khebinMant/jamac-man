@@ -5,9 +5,16 @@ import Game from "../game/game";
 import { Howl } from "howler";
 import { Button } from 'primereact/button';
 import { InputText } from "primereact/inputtext";
-import { InputNumber } from "primereact/inputnumber";
+import { Controller, useForm } from "react-hook-form";
+import { Dropdown } from 'primereact/dropdown';
 
 export default function Main({ reactRoot, user }) {
+  const { register, handleSubmit, formState: { errors }, control } = useForm({
+    defaultValues: {
+      username: '',
+      edad: null // Inicialización para que InputNumber funcione correctamente
+    }
+  });
   const [theme] = useState(
     new Howl({
       src: ["./audio/title_theme.wav"],
@@ -25,12 +32,7 @@ export default function Main({ reactRoot, user }) {
     });
   }, [theme]);
 
-  // const handleLogout = () => {
-  //   localStorage.removeItem("token");
-  //   window.location.reload();
-  // };
-
-  const handleSubmit = () => {
+  const onSubmit = () => {
     const player = user ? user : undefined;
     theme.pause();
     if (reactRoot) {
@@ -49,33 +51,19 @@ export default function Main({ reactRoot, user }) {
     );
   };
 
-  // const handleLogout = () => {
-  //   localStorage.removeItem("token");
-  //   window.location.reload();
-  // };
+  // Opciones para el select
+  const options = [
+    { value: 'option1', label: 'Opción 1' },
+    { value: 'option2', label: 'Opción 2' },
+    { value: 'option3', label: 'Opción 3' }
+  ];
 
-  // const buttons = () => {
-  //   return user ? (
-  //     <button className="logout-button" onClick={handleLogout}>
-  //       Log out
-  //     </button>
-  //   ) : (
-  //     <div>
-  //       <a href="/login">
-  //         <button className="login-button">Log in</button>
-  //       </a>
-  //       <a href="/signup">
-  //         <button className="signup-button">Sign up</button>
-  //       </a>
-  //     </div>
-  //   );
-  // };
 
   const signupInstructions = () => {
     return user ? null : (
       // <></>
       <p className="signup-instructions">
-        Make an account to submit your score onto the leaderboard!
+        Completa el formulario para jugar!
       </p>
     );
   };
@@ -87,31 +75,108 @@ export default function Main({ reactRoot, user }) {
       <br></br>
       <br></br>
       <img
-        className="title-gif"
+        className="title-gif w-full h-auto"
         src="/jama/jama_start.gif"
         alt="Pac-Man gif"
       />
       {signupInstructions()}
-      <div className="flex flex-wrap align-items-center mb-3 gap-2">
-          <label htmlFor="username" className="p-sr-only">Nombre</label>
-          <InputText id="username" placeholder="Nombre" className="p-invalid mr-2" />
-          {/* <Message severity="error" text="Username is required" /> */}
+
+      <form onSubmit={handleSubmit(onSubmit)} className="space-y-4">
+        <div className="flex flex-col">
+        <InputText 
+          id="names"
+          placeholder="Nombres"
+          className={`p-inputtext w-full ${errors.names && 'p-invalid'}`} 
+          {...register('names', {
+            required: 'Campo obligatorio',
+          })} 
+        />
+        {errors.names && (
+          <>
+            <br/>
+            <span className="text-red-500 text-sm mt-1">
+              {errors.names.message}
+            </span>
+          </>
+        )}
       </div>
-      <div className="flex flex-wrap align-items-center gap-2">
-          <label htmlFor="edad" className="p-sr-only">Edad</label>
-          <InputNumber id="edad" placeholder="Edad" className="p-invalid mr-2" />
-          {/* <Message severity="error" /> */}
+      <div className="flex flex-col">
+        <InputText 
+          id="lastnames"
+          placeholder="Apellidos"
+          className={`p-inputtext w-full ${errors.names && 'p-invalid'}`} 
+          {...register('lastnames', {
+            required: 'Campo obligatorio',
+          })} 
+        />
+        {errors.lastnames && (
+          <>
+          <br/>
+            <span className="text-red-500 text-sm mt-1">
+              {errors.lastnames.message}
+            </span>
+          </>
+        )}
       </div>
-      {/* <div className="register"> */}
-       <Button label="Jugar  !" icon="pi pi-check" onClick={handleSubmit}/>
-      {/* </div> */}
-      <p className="name-error" id="name-error"></p>
+      {/* Campo de correo */}
+      <div className="flex flex-col">
+        <InputText 
+          id="email"
+          placeholder="Correo electrónico"
+          className={`p-inputtext w-full ${errors.email && 'p-invalid'}`} 
+          {...register('email', {
+            required: 'Campo obligatorio',
+            pattern: {
+              value: /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/,
+              message: 'Formato de correo inválido'
+            }
+          })} 
+        />
+        {errors.email && (
+          <>
+            <br/>
+            <span className="text-red-500 text-sm mt-1">
+              {errors.email.message}
+            </span>
+          </>
+        )}
+      </div>
+
+ {/* Dropdown de PrimeReact */}
+    <div className="flex flex-col">
+        <Controller
+          name="option"
+          control={control}
+          rules={{ required: 'Debe seleccionar una opción' }}
+          render={({ field }) => (
+            <Dropdown
+              options={options}
+              value={field.value}
+              onChange={(e) => field.onChange(e.value)}
+              placeholder="¿Cúal es tu plato favorito de la Jama"
+              className={`w-full ${errors.option && 'p-invalid'}`}
+            />
+          )}
+        />
+        {errors.option && (
+          <>
+            <br/>
+          <span className="text-red-500 text-sm mt-1">
+            {errors.option.message}
+          </span>
+          </>
+        )}
+      </div>
+
+      <Button label="Enviar" icon="pi pi-check" type="submit" className="mt-10" />
+    </form>
+
       <p className="instructions">
-        Use the directional keys to move Pac-Man around the board while avoiding
-        the ghosts as best you can. Pick up a power up and then attack the
-        ghosts! Eat all the pellets on the board to level up. Press esc to pause
-        and unpause the game at any time. (For mobile and tablet users, a D-pad
-        will appear below the board for you to move Pac-Man around)
+        Usa las teclas direccionales para mover a Jama-CMan por el tablero mientras evitas
+        a los tiburones lo mejor que puedas. ¡Recoge un potenciador y luego ataca a los
+        tiburones! Cómete todas las bolitas del tablero para subir de nivel. Presiona esc para pausar
+        y reanudar el juego en cualquier momento. (Para los usuarios de dispositivos móviles y tabletas, aparecerá un D-pad
+        debajo del tablero para que puedas mover a Pac-Man)
       </p>
     </div>
   );

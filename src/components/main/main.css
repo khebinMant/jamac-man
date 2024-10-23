@@ -34,7 +34,7 @@ button {
 
 .signup-instructions,
 .instructions {
-  color: white;
+  color: #608AB2;
   margin: auto;
   padding: 2vmin;
 }
@@ -42,5 +42,5 @@ button {
 .text-header{
   color: cyan;
   -webkit-text-stroke: 1px black;
-  font-size: 10vw;
+  font-size: 8vw;
 }

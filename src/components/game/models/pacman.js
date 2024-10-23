@@ -192,7 +192,7 @@ export default class PacMan {
   
     // Cuerpo del pez (elipse más estilizada)
     ctx.beginPath();
-    ctx.ellipse(this.position.x, this.position.y, this.radius * 2.5, this.radius * 1.5, 0, 0, Math.PI * 2);
+    ctx.ellipse(this.position.x, this.position.y, this.radius * 2, this.radius, 0, 0, Math.PI * 2);
     ctx.fillStyle = "lightblue"; // Color del pez
     ctx.fill();
     ctx.strokeStyle = "black"; // Contorno del pez
@@ -203,38 +203,38 @@ export default class PacMan {
     // Boca del pez (simple curva)
     ctx.beginPath();
     ctx.arc(
-      this.position.x + this.radius * 1.8, 
+      this.position.x + this.radius * 1.5, 
       this.position.y, 
-      this.radius / 2, 
+      this.radius * 0.6, // Tamaño aumentado de la boca
       this.radians, 
       Math.PI * 2 - this.radians
     );
-    ctx.lineTo(this.position.x + this.radius * 1.8, this.position.y); 
+    ctx.lineTo(this.position.x + this.radius * 1.5, this.position.y); 
     ctx.fillStyle = "white"; // Color de la boca
     ctx.fill();
     ctx.closePath();
   
     // Ojo del pez (grande y expresivo)
     ctx.beginPath();
-    ctx.arc(this.position.x + this.radius, this.position.y - this.radius / 2, this.radius / 2, 0, Math.PI * 2);
+    ctx.arc(this.position.x + this.radius * 0.8, this.position.y - this.radius / 2, this.radius / 4, 0, Math.PI * 2);
     ctx.fillStyle = "white";
     ctx.fill();
     ctx.stroke();
   
     // Pupila del ojo
     ctx.beginPath();
-    ctx.arc(this.position.x + this.radius, this.position.y - this.radius / 2, this.radius / 4, 0, Math.PI * 2);
+    ctx.arc(this.position.x + this.radius * 0.8, this.position.y - this.radius / 2, this.radius / 8, 0, Math.PI * 2);
     ctx.fillStyle = "black";
     ctx.fill();
     ctx.closePath();
   
     // Escamas decorativas (varios semicírculos)
-    for (let i = 0; i < 4; i++) {
+    for (let i = 0; i < 3; i++) { // Reducido a 3 para una apariencia más simple
       ctx.beginPath();
       ctx.arc(
         this.position.x - this.radius * (i - 0.5), 
         this.position.y, 
-        this.radius / 3, 
+        this.radius / 5, 
         Math.PI, 
         Math.PI * 2
       );
@@ -244,9 +244,9 @@ export default class PacMan {
       ctx.closePath();
     }
   
-    // Aleta trasera (triángulo)
+    // Aleta trasera (triángulo más grande)
     ctx.beginPath();
-    ctx.moveTo(this.position.x - this.radius * 2.5, this.position.y); // Punto en el centro trasero del pez
+    ctx.moveTo(this.position.x - this.radius * 2.2, this.position.y); // Punto en el centro trasero del pez
     ctx.lineTo(this.position.x - this.radius * 3, this.position.y - this.radius); // Esquina superior del triángulo
     ctx.lineTo(this.position.x - this.radius * 3, this.position.y + this.radius); // Esquina inferior del triángulo
     ctx.closePath(); // Cierra el triángulo
@@ -257,9 +257,9 @@ export default class PacMan {
   
     // Aletas superiores (curvas decorativas)
     ctx.beginPath();
-    ctx.moveTo(this.position.x - this.radius * 1.5, this.position.y - this.radius * 1.2);
-    ctx.lineTo(this.position.x - this.radius, this.position.y - this.radius * 1.8);
+    ctx.moveTo(this.position.x - this.radius, this.position.y - this.radius * 0.8);
     ctx.lineTo(this.position.x - this.radius * 0.5, this.position.y - this.radius * 1.2);
+    ctx.lineTo(this.position.x, this.position.y - this.radius * 0.8);
     ctx.fillStyle = "lightblue";
     ctx.fill();
     ctx.strokeStyle = "black";
@@ -288,7 +288,7 @@ export default class PacMan {
   
   chomp() {
     // Controla la apertura y cierre de la boca
-    if (this.radians < Math.PI / 36 || this.radians > Math.PI / 4) {
+    if (this.radians < Math.PI / 4 || this.radians > Math.PI / 2) { // Rango de apertura aumentado
       if (this.isEating) {
         // Sonido o acción cuando el pez come (opcional)
         this.openRate = -this.openRate; 
@@ -296,7 +296,6 @@ export default class PacMan {
     }
     this.radians += this.openRate; // Ajusta la apertura de la boca
   }
-  
   checkRotation() {
     // Ajustar la rotación según la dirección en la que el pez se mueve
     if (this.velocity.x > 0) this.rotation = 0; // Movimiento hacia la derecha
