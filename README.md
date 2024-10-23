@@ -1,101 +1,205 @@
-# <img height="32" width="32" src="./images/react.svg" /> Pac-Man Client <img src="./public/images/red-ghost-right.png" height="30"> <img src="./public/images/pink-ghost-right.png" height="30"> <img src="./public/images/cyan-ghost-right.png" height="30"> <img src="./public/images/orange-ghost-right.png" height="30"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./public/images/scared-ghost-blue.png" height="30">
+<br />
+<div align="center">
+  <a href="https://github.com">
+    <img src="./public/jama/jama_start.gif" alt="Logo" width="180" height="300">
+  </a>
 
-This repository is the client React application for my solo Pac-Man project. Players can visit the live site and click play. Upon which the game will load with similar rules to the original Pac-Man where the player has to score as many points as they can while avoiding the ghosts that roam the board. This client connects to a backend server to display high scores made by other players on a leaderboard when all their lives run out and the game is over. The player can sign up and make an account themselves for their score to also be saved in the database.
+  <h1 style="font-size: 60px; font-weight: 700" align="center">Jama CMan</h1>
 
-The SolidJS version of this app (in progress) can be found at https://github.com/jmcnally17/pacman-client-solid
+![react](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
+![redux](https://img.shields.io/badge/Redux-593D88?style=for-the-badge&logo=redux&logoColor=white)
+![react-router](https://img.shields.io/badge/React_Router-CA4245?style=for-the-badge&logo=react-router&logoColor=white)
+<a href="JS" target="_blank"><img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" target="_blank"></a>
+<a href="HTML" target="_blank"><img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" target="_blank"></a>
+<a href="SASS" target="_blank"><img src="https://img.shields.io/badge/SASS-FF5858?style=for-the-badge&logo=sass&logoColor=white" target="_blank"></a>
 
-This app pairs with an API that has multiple versions: <br>
-JS API (deployed version): https://github.com/jmcnally17/pacman-api-js <br>
-Java API: https://github.com/jmcnally17/pacman-api-java
+<h4 align="center">
 
-The original project monolith (with a full comprehensive commit history) can be found at https://github.com/jmcnally17/pacman-old
+  <p align="center">https://jamac-man.netlify.app/</p>
 
-[<img src="./images/pacman-play-button.png">](https://projectpacman.netlify.app)
+</h4>
 
-### Technologies Used
+---
 
-- [React](https://reactjs.org/) as a web framework
-- [Node.js](https://nodejs.org/en/) for the server runtime environment
-- [HTML5 Canvas](https://www.w3schools.com/html/html5_canvas.asp) as a container for the graphics
-- [React Testing Library](https://testing-library.com/docs/react-testing-library/intro/) for testing
-- [Pexels Draw](https://apps.apple.com/us/app/pexels-draw/id1320744895?mt=12) for creating the boundary images and ghost sprites
-- [Netlify](https://www.netlify.com/) for deployment
-- [GitHub](https://github.com/) for version control
+  <p align="center">
+    Un clásico de toda la vida mientras esperas
+    <br />
+    <br />
+    <a href="https://github.com/khebinMant">Probar Demo</a>
+    ·
+    <a href="https://github.com/khebinMant">Reportar un error</a>
+    ·
+    <a href="https://github.com/khebinMant">Solicitar una caracteristica nueva</a>
+  </p>
+</div>
 
-A huge thank you to [Chris Courses](https://www.youtube.com/c/ChrisCourses) YouTube channel for his tutorial which helped with some of the basic game mechanics. Link to the tutorial video can be found [here](https://youtu.be/5IMXpp3rohQ).
+<!-- TABLE OF CONTENTS -->
 
-Another thank you to [Stuart McNally](https://github.com/Stew2134) for remastering all the audio using [Ableton Live 11](https://www.ableton.com/en/live/).
+<br/>
+<details>
+  <summary>Tabla de Contenidos</summary>
+  <ol>
+    <li>
+      <a href="#-about-the-project">🎶Acerca del proyecto</a>
+      <ul>
+        <li><a href="#-built-with">🔨Contruido con</a></li>
+      </ul>
+    </li>
+    <li>
+      <a href="#-getting-started">🤸¡Empezemos!</a>
+      <ul>
+        <li><a href="#💾-installation">Instalación</a></li>
+      </ul>
+    </li>
+    <li><a href="#-usage">Usage</a></li>
+    <li><a href="#-roadmap">Roadmap</a></li>
+    <li><a href="#-contributing">Contribuir</a></li>
+    <li><a href="#-license">Licencia</a></li>
+    <li><a href="#-contact">Contacto</a></li>
+    <li><a href="#ℹ️-acknowledgments">Acknowledgments</a></li>
+  </ol>
+</details>
 
-## Gameplay
+<!-- ABOUT THE PROJECT -->
 
-The player can use the directional keys to move Pac-Man within the boundaries around the board. The four ghosts will periodically cycle through scattering and chasing Pac-Man and will move randomly while in their scared state or retreating state. For mobile and tablet users who don't have a keyboard, a D-pad is displayed under the game board that they can click which trigger keyboard events for arrow keys.
+<hr/>
+<br/>
 
-### Rules
+# 📱 Acerca de nuestro proyecto
 
-- Pac-Man starts off with 2 extra lives
-- Eating 1 pellet is worth 10 points
-- Eating every pellet completes the current level
-- After completing a level, the board is reset to its original configuration, except for Pac-Man's lives and the player's score
-- Eating 1 power up is worth 50 points
-- Eating a power up scares all unscared ghosts which halves their speed and lasts for a specific duration that depends on the level number
-- Eating a power up has no effect on scared ghosts other than restarting the scared phase
-- Colliding with a scared ghost sends the ghost into retreating mode for 3 seconds and is worth $2^n \cdot 200$ points where n is the number of scared ghosts attacked since the last power up was eaten
-- Colliding with a ghost that is not scared decreases Pac-Man's lives by 1 and resets character positions on the board
-- Colliding with a ghost that is not scared when Pac-Man has no extra lives left ends the game
+"Jama-Cman" es un divertido juego inspirado en el clásico Pac-Man, pero con un giro creativo: en lugar de controlar al icónico personaje amarillo, ahora eres un pez en un mundo submarino lleno de desafíos.
 
-<p align="center">
-  <img src="./images/gameplay.png" width="55%">
-</p>
+En este juego, deberás guiar a tu pez a través de laberintos acuáticos mientras evitas a depredadores y recolectas tesoros marinos. El objetivo es navegar estratégicamente por los niveles, recoger la mayor cantidad de recompensas posibles y llegar al final sin ser atrapado. A medida que avanzas, los niveles se vuelven más complicados, con nuevos obstáculos y enemigos que pondrán a prueba tu habilidad y reflejos.
 
-<p align="center">
-  <b>Fig.1 -</b> A screenshot of some gameplay with Pac-Man collecting pellets while avoiding the ghosts. The game stats can be seen at the top
-</p>
+Con gráficos coloridos, una jugabilidad fluida y un toque de nostalgia, "Jama-Cman" ofrece una experiencia emocionante para jugadores de todas las edades. ¿Listo para sumergirte en esta aventura submarina?
 
-## Running Locally
+### ¿Que puedes hacer?
 
-This app can be run on your localhost. However, a number of frameworks need to be installed which requires some setup to do.
+En "Jama - Cman", puedes disfrutar de una emocionante aventura submarina con muchas opciones para personalizar tu experiencia de juego:
 
-### Getting Started
+- Explorar el mundo submarino: Navega por coloridos laberintos acuáticos mientras recolectas tesoros marinos y evitas a los depredadores. 🌊🐠💎
+- Personaliza tu experiencia con diferentes modos de dificultad y entornos únicos.
+- Jugar, pausar y reanudar: Comienza una partida en cualquier momento, pausa cuando lo necesites y retoma el juego sin perder tu progreso.
 
-This client application is run using Node.js, which is installed using NVM - Node Version Manager. So if you haven't already, open your terminal and install NVM using:
+# 🔨 Frontend construido con
 
+- ![react](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
+
+- ![prime](https://img.shields.io/badge/-Prime-blue?style=for-the-badge&logo=RuboCop)
+
+- ![redux](https://img.shields.io/badge/Redux-593D88?style=for-the-badge&logo=redux&logoColor=white)
+- ![react-router](https://img.shields.io/badge/React_Router-CA4245?style=for-the-badge&logo=react-router&logoColor=white)
+- <a href="JS" target="_blank"><img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" target="_blank"></a>
+- <a href="HTML" target="_blank"><img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" target="_blank"></a>
+- <a href="SASS" target="_blank"><img src="https://img.shields.io/badge/SASS-FF5858?style=for-the-badge&logo=sass&logoColor=white" target="_blank"></a>
+- ![vercel](https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=Vercel&logoColor=white)
+- ![jest](https://img.shields.io/badge/Jest-E34F26?style=for-the-badge&logo=jest&logoColor=white)
+
+<!-- GETTING STARTED -->
+
+# 🤸 Empecemos!
+
+Es necesario tener Git en tu computadora 😺.
+
+### 💾 🗄️ Instalación
+
+```bash
+# Clone Repository
+$ git clone https://github.com/khebinMant/jamac-man
+# Go to server folder
+$ cd jamac-man
+# Install Dependencies
+$ npm i
+# Run Aplication with create react app
+$ npm start
 ```
-curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash
-```
 
-Now, your ~/.zshrc file will need reloading:
+<!-- USAGE EXAMPLES -->
+<br/>
 
-```
-source ~/.zshrc
-```
+# ⏩ Uso
 
-Next, you can install and start using node by running:
+  <h1 style="font-size: 60px; font-weight: 700" align="center">Jugador</h1>
 
-```
-nvm install node
-nvm use node
-```
+- En nuestro juego puedes registrar una información previa antes de empezar a jugar, una vez completado a divertirse!
 
-`nvm use node` will use the latest stable version.
+<!-- ROADMAP -->
+<br/>
 
-### How To Use
+# 💻 Live Demo
 
-Now, you can clone this repository:
+<h4 align="center">
+	🚧 Status: Building 🚀  🚧
+  <p align="center">https://jamac-man.netlify.app/</p>
 
-```
-git clone https://github.com/jmcnally17/pacman-client-react.git
-```
+</h4>
+<br/>
 
-The dependencies must be installed by running `npm install` while in the [main](https://github.com/jmcnally17/pacman-client-react) directory.
+# 🗺 Roadmap
 
-Now you can run this app by entering `npm start` while in the [main](https://github.com/jmcnally17/pacman-client-react) directory and then visit http://localhost:8000 in your browser to play the game.
+- [✔] Seleccionar Tema para nuestro juego customizados
+- [✔] Realizar una lluvia de ideas para definir la funcionalidad y objetivos de ejecución.
+- [✔] Decidir el Modelo Visual a implementar
+- [✔] Establecer la metodología de trabajo sobre Github
+- [✔] Definir la estructura de carpetas dentro de la aplicación
+- [✔] Estandarizar el nombramiento de componentes y clases dentro del HTML
+- [✔] Generar componentes con la Api seleccionada
 
-In order to play with full functionality, you must also be running the backend server alongside this client (link to that repo found at the top of this README).
+<!-- CONTRIBUTING -->
+<br/>
 
-## Testing
+# 🙌 Contribuciones
 
-Tests can be run while in the [main](https://github.com/jmcnally17/pacman-client-react) directory by running `npm test`. Code coverage statistics can be obtained by running `npm run test:coverage`. Tests were written first in order to adhere to the test-driven development (TDD) process by following the red-green-refactor cycle.
+Contribuciones son lo que hacen de la comunidad de código abierto un lugar impresionante para aprender, inspirarse y crear. Cualquier contribución que hagas es muy apreciada.
 
-## Create React App
+1. Forkear el Proyecto
+2. Crear la nueva rama para el feature (`git checkout -b feature/AmazingFeature`)
+3. Commit tus cambios (`git commit -m 'Add some AmazingFeature'`)
+4. Push tu rama (`git push origin feature/AmazingFeature`)
+5. Abrir un Pull Request
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<br/>
+
+<!-- LICENSE -->
+
+# 📜 Licencia
+
+Jama - CMan esa distribuida bajo los terminos de Apache License Version 2.0. La version completa de la licencia esta disponible en el archivo [LICENSE](LICENSE) de este repositorio. Cualquier contribucion a este proyecto sera licenciada bajo la licencia Apache License Version 2.0.
+
+Especial agradecimiento al código Forkeado de jmcnally17
+<a href="https://github.com/jmcnally17/pacman-client-react" target="_blank">jmcnally17 PACMAN</a>
+
+
+<br/>
+<!-- CONTACT -->
+
+# 📫 Contacto
+
+<img style="border-radius: 50% !important;" src="https://avatars.githubusercontent.com/u/33032880?v=4" width="100px;" alt="photo author"/>
+
+<sub><b>Kevin Mantilla</b></sub>
+<br />
+
+[![linkedin][linkedin.js]][linkedin-url] [![github][github.js]][github3-url]
+
+<hr/>
+
+<!-- ACKNOWLEDGMENTS -->
+
+<br/>
+
+# ℹ️ Acknowledgments
+
+<table>
+    <tbody>
+<tr>
+        <td align="center"><a href="https://github.com/khebinMant"><img src="https://avatars.githubusercontent.com/u/33032880?v=4" width="100px;" alt="Kevin Mantilla"/><br /><sub><b>Kevin Mantilla</b></sub></a><br /><a href="https://github.com/khebinMant" title="Code">💻 Desarrollador Full Stack</a></td>
+        </tr>
+        <tr>
+    </tbody>
+</table>
+
+[linkedin.js]: https://img.shields.io/badge/-LinkedIn-1C82AD?logo=LinkedIn
+[linkedin-url]: https://ec.linkedin.com/in/kevin-alexander-mantilla-3238a5213?trk=people-guest_people_search-card
+[github.js]: https://img.shields.io/badge/-GitHub-181717?logo=GitHub
+[github3-url]: https://github.com/khebinMant
