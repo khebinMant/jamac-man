@@ -185,6 +185,10 @@ export default class PacMan {
   draw(ctx) {
     ctx.save();
   
+    // Escalar el tamaño del pez
+    const scaleFactor = 0.50; // Factor de escala para reducir a 35x35 aproximadamente
+    const scaledRadius = this.radius * scaleFactor;
+
     // Trasladar y rotar al pez
     ctx.translate(this.position.x, this.position.y);
     ctx.rotate(this.rotation);
@@ -192,74 +196,74 @@ export default class PacMan {
   
     // Cuerpo del pez (elipse más estilizada)
     ctx.beginPath();
-    ctx.ellipse(this.position.x, this.position.y, this.radius * 2, this.radius, 0, 0, Math.PI * 2);
+    ctx.ellipse(this.position.x, this.position.y, scaledRadius * 2, scaledRadius, 0, 0, Math.PI * 2);
     ctx.fillStyle = "lightblue"; // Color del pez
     ctx.fill();
     ctx.strokeStyle = "black"; // Contorno del pez
-    ctx.lineWidth = 2;
+    ctx.lineWidth = 1; // Tamaño del contorno reducido
     ctx.stroke();
     ctx.closePath();
   
-    // Boca del pez (simple curva)
+    // Boca del pez (curva ajustada)
     ctx.beginPath();
     ctx.arc(
-      this.position.x + this.radius * 1.5, 
+      this.position.x + scaledRadius * 1.5, 
       this.position.y, 
-      this.radius * 0.6, // Tamaño aumentado de la boca
+      scaledRadius * 0.6, // Tamaño ajustado de la boca
       this.radians, 
       Math.PI * 2 - this.radians
     );
-    ctx.lineTo(this.position.x + this.radius * 1.5, this.position.y); 
+    ctx.lineTo(this.position.x + scaledRadius * 1.5, this.position.y); 
     ctx.fillStyle = "white"; // Color de la boca
     ctx.fill();
     ctx.closePath();
   
-    // Ojo del pez (grande y expresivo)
+    // Ojo del pez (más pequeño)
     ctx.beginPath();
-    ctx.arc(this.position.x + this.radius * 0.8, this.position.y - this.radius / 2, this.radius / 4, 0, Math.PI * 2);
+    ctx.arc(this.position.x + scaledRadius * 0.8, this.position.y - scaledRadius / 2, scaledRadius / 4, 0, Math.PI * 2);
     ctx.fillStyle = "white";
     ctx.fill();
     ctx.stroke();
   
     // Pupila del ojo
     ctx.beginPath();
-    ctx.arc(this.position.x + this.radius * 0.8, this.position.y - this.radius / 2, this.radius / 8, 0, Math.PI * 2);
+    ctx.arc(this.position.x + scaledRadius * 0.8, this.position.y - scaledRadius / 2, scaledRadius / 8, 0, Math.PI * 2);
     ctx.fillStyle = "black";
     ctx.fill();
     ctx.closePath();
   
-    // Escamas decorativas (varios semicírculos)
-    for (let i = 0; i < 3; i++) { // Reducido a 3 para una apariencia más simple
+    // Escamas decorativas
+    for (let i = 0; i < 2; i++) { // Reducido a 2 para el tamaño más pequeño
       ctx.beginPath();
       ctx.arc(
-        this.position.x - this.radius * (i - 0.5), 
+        this.position.x - scaledRadius * (i - 0.5), 
         this.position.y, 
-        this.radius / 5, 
+        scaledRadius / 5, 
         Math.PI, 
         Math.PI * 2
       );
       ctx.strokeStyle = "white";
-      ctx.lineWidth = 1;
+      ctx.lineWidth = 0.5; // Escamas más finas
       ctx.stroke();
       ctx.closePath();
     }
   
-    // Aleta trasera (triángulo más grande)
+    // Aleta trasera (triángulo reducido)
     ctx.beginPath();
-    ctx.moveTo(this.position.x - this.radius * 2.2, this.position.y); // Punto en el centro trasero del pez
-    ctx.lineTo(this.position.x - this.radius * 3, this.position.y - this.radius); // Esquina superior del triángulo
-    ctx.lineTo(this.position.x - this.radius * 3, this.position.y + this.radius); // Esquina inferior del triángulo
+    ctx.moveTo(this.position.x - scaledRadius * 2.2, this.position.y); // Punto en el centro trasero del pez
+    ctx.lineTo(this.position.x - scaledRadius * 3, this.position.y - scaledRadius); // Esquina superior del triángulo
+    ctx.lineTo(this.position.x - scaledRadius * 3, this.position.y + scaledRadius); // Esquina inferior del triángulo
     ctx.closePath(); // Cierra el triángulo
     ctx.fillStyle = "lightblue";
     ctx.fill();
     ctx.strokeStyle = "black";
     ctx.stroke();
   
-    // Aletas superiores (curvas decorativas)
+    // Aletas superiores (más pequeñas)
     ctx.beginPath();
-    ctx.moveTo(this.position.x - this.radius, this.position.y - this.radius * 0.8);
-    ctx.lineTo(this.position.x - this.radius * 0.5, this.position.y - this.radius * 1.2);
-    ctx.lineTo(this.position.x, this.position.y - this.radius * 0.8);
+    ctx.moveTo(this.position.x - scaledRadius, this.position.y - scaledRadius * 0.8);
+    ctx.lineTo(this.position.x - scaledRadius * 0.5, this.position.y - scaledRadius * 1.2);
+    ctx.lineTo(this.position.x, this.position.y - scaledRadius * 0.8);
     ctx.fillStyle = "lightblue";
     ctx.fill();
     ctx.strokeStyle = "black";
@@ -267,8 +271,7 @@ export default class PacMan {
     ctx.closePath();
   
     ctx.restore();
-  }
-  
+}
   update(ctx) {
     this.checkRotation();
     this.draw(ctx);
