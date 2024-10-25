@@ -180,7 +180,7 @@ Especial agradecimiento al código Forkeado de jmcnally17
 <sub><b>Kevin Alexander Mantilla</b></sub>
 <br />
 
-[![linkedin][linkedin.js]][linkedin-url] [![github][github.js]][github3-url]
+[![linkedin][linkedin.js]][linkedin-url] [![github][github.js]][github-url]
 
 <img style="border-radius: 50% !important;" src="https://media.licdn.com/dms/image/v2/C4E03AQEpRJBPfAip5g/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1593573911806?e=1735171200&v=beta&t=3_m3wMn-iOTDPzi__-E2C8GhYYuMpMahIZUolAmn-i8" width="100px;" alt="photo author"/>
 
