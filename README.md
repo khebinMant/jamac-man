@@ -177,12 +177,55 @@ Especial agradecimiento al código Forkeado de jmcnally17
 
 <img style="border-radius: 50% !important;" src="https://avatars.githubusercontent.com/u/33032880?v=4" width="100px;" alt="photo author"/>
 
-<sub><b>Kevin Mantilla</b></sub>
+<sub><b>Kevin Alexander Mantilla</b></sub>
 <br />
 
 [![linkedin][linkedin.js]][linkedin-url] [![github][github.js]][github3-url]
 
+<img style="border-radius: 50% !important;" src="https://media.licdn.com/dms/image/v2/C4E03AQEpRJBPfAip5g/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1593573911806?e=1735171200&v=beta&t=3_m3wMn-iOTDPzi__-E2C8GhYYuMpMahIZUolAmn-i8" width="100px;" alt="photo author"/>
+
+<sub><b>John Morillo</b></sub>
+<br />
+
+[![linkedin][linkedin.js]][linkedin1-url]
 <hr/>
+
+<img style="border-radius: 50% !important;" src="https://media.licdn.com/dms/image/v2/D4E35AQHCpnDohQkd4A/profile-framedphoto-shrink_200_200/profile-framedphoto-shrink_200_200/0/1726456236580?e=1730430000&v=beta&t=EFiy_5FNSHAk4TIbjGOgAcNn637bW7zx5Nf64Gve364" width="100px;" alt="photo author"/>
+
+<sub><b>Juan David Negrete Narváez</b></sub>
+<br />
+
+[![linkedin][linkedin.js]][linkedin2-url]
+<hr/>
+
+
+
+<img style="border-radius: 50% !important;" src="https://media.licdn.com/dms/image/v2/D4E03AQHC8kIym2f4rw/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1701238637717?e=1735171200&v=beta&t=5yn_WsUZz40oU97Enkaio970LVFMoeJpDKy4LLIZ7YQ" width="100px;" alt="photo author"/>
+
+<sub><b>Vanessa Alvear</b></sub>
+<br />
+
+[![linkedin][linkedin.js]][linkedin3-url]
+<hr/>
+
+
+<img style="border-radius: 50% !important;" src="https://media.licdn.com/dms/image/v2/C5103AQGZYsUkYAdMow/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1517270408967?e=1735171200&v=beta&t=KTm8NuNCL8R7WXkWt41qpkwlklKD3dJ8RkR-ya6bIEU" width="100px;" alt="photo author"/>
+
+<sub><b>Esteban Alomoto</b></sub>
+<br />
+
+[![linkedin][linkedin.js]][linkedin4-url]
+<hr/>
+
+
+<img style="border-radius: 50% !important;" src="https://media.licdn.com/dms/image/v2/D4E03AQEliFINUZ01cQ/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1709770649919?e=1735171200&v=beta&t=dvutvwmndgotbAt_4iXRzCc3VWQfWVdtR7Fl3dPin0k" width="100px;" alt="photo author"/>
+
+<sub><b>Mateo Sebastián Flores Calderón</b></sub>
+<br />
+
+[![linkedin][linkedin.js]][linkedin5-url]
+<hr/>
+
 
 <!-- ACKNOWLEDGMENTS -->
 
@@ -192,14 +235,25 @@ Especial agradecimiento al código Forkeado de jmcnally17
 
 <table>
     <tbody>
-<tr>
-        <td align="center"><a href="https://github.com/khebinMant"><img src="https://avatars.githubusercontent.com/u/33032880?v=4" width="100px;" alt="Kevin Mantilla"/><br /><sub><b>Kevin Mantilla</b></sub></a><br /><a href="https://github.com/khebinMant" title="Code">💻 Desarrollador Full Stack</a></td>
-        </tr>
-        <tr>
+      <tr>
+        <td align="center"><a href="https://github.com/khebinMant"><img src="https://avatars.githubusercontent.com/u/33032880?v=4" width="100px;" alt="Kevin Mantilla"/><br><sub><b>Kevin Alexander Mantilla</b></sub></a><br /><a href="https://github.com/khebinMant" title="Code">💻 Desarrollador Full Stack</a>
+        </td>
+      <tr>
     </tbody>
 </table>
 
 [linkedin.js]: https://img.shields.io/badge/-LinkedIn-1C82AD?logo=LinkedIn
-[linkedin-url]: https://ec.linkedin.com/in/kevin-alexander-mantilla-3238a5213?trk=people-guest_people_search-card
 [github.js]: https://img.shields.io/badge/-GitHub-181717?logo=GitHub
-[github3-url]: https://github.com/khebinMant
+
+[linkedin-url]: https://ec.linkedin.com/in/kevin-alexander-mantilla-3238a5213?trk=people-guest_people_search-card
+[github-url]: https://github.com/khebinMant
+
+[linkedin1-url]: https://www.linkedin.com/in/john-morillo-2021/
+
+[linkedin2-url]: https://www.linkedin.com/in/crepo-jd/
+
+[linkedin3-url]: https://www.linkedin.com/in/vanessa-alvear1111/
+
+[linkedin4-url]: https://www.linkedin.com/in/esteban-alomoto-95179b113/
+
+[linkedin4-url]: https://www.linkedin.com/in/mateo-sebastian-flores-calderon-b909a3111/

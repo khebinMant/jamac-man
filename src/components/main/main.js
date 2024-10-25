@@ -96,6 +96,41 @@ export default function Main({ reactRoot, user }) {
     { value: '40', label: 'Mixto Picante' },
   ];
 
+  const parroquias = [
+    { value: '1', label: 'Belisario Quevedo' },
+    { value: '2', label: 'Carcelén' },
+    { value: '3', label: 'Centro Histórico' },
+    { value: '4', label: 'Chilibulo' },
+    { value: '5', label: 'Chillogallo' },
+    { value: '6', label: 'Chimbacalle' },
+    { value: '7', label: 'Cochapamba' },
+    { value: '8', label: 'Comité del Pueblo' },
+    { value: '9', label: 'Concepción' },
+    { value: '10', label: 'Cotocollao' },
+    { value: '11', label: 'El Condado' },
+    { value: '12', label: 'El Inca' },
+    { value: '13', label: 'Guamaní' },
+    { value: '14', label: 'Iñaquito' },
+    { value: '15', label: 'Itchimbía' },
+    { value: '16', label: 'Jipijapa' },
+    { value: '17', label: 'Kennedy' },
+    { value: '18', label: 'La Argelia' },
+    { value: '19', label: 'La Ecuatoriana' },
+    { value: '20', label: 'La Ferroviaria' },
+    { value: '21', label: 'La Libertad' },
+    { value: '22', label: 'La Mena' },
+    { value: '23', label: 'Magdalena' },
+    { value: '24', label: 'Mariscal Sucre' },
+    { value: '25', label: 'Ponceano' },
+    { value: '26', label: 'Puengasí' },
+    { value: '27', label: 'Quitumbe' },
+    { value: '28', label: 'Rumipamba' },
+    { value: '29', label: 'San Bartolo' },
+    { value: '30', label: 'San Juan' },
+    { value: '31', label: 'Solanda' },
+
+  ]
+
 
   const signupInstructions = () => {
     return user ? null : (
@@ -191,7 +226,7 @@ export default function Main({ reactRoot, user }) {
               options={options}
               value={field.value}
               onChange={(e) => field.onChange(e.value)}
-              placeholder="¿Cúal es tu plato favorito de la Jama"
+              placeholder="¿Cúal es tu plato favorito de la Jama?"
               className={`w-full ${errors.option && 'p-invalid'}`}
             />
           )}
@@ -206,6 +241,31 @@ export default function Main({ reactRoot, user }) {
         )}
       </div>
 
+    {/* Dropdown de PrimeReact */}
+    <div className="flex flex-col">
+        <Controller
+          name="parroquias"
+          control={control}
+          rules={{ required: 'Debe seleccionar una opción' }}
+          render={({ field }) => (
+            <Dropdown
+              options={parroquias}
+              value={field.value}
+              onChange={(e) => field.onChange(e.value)}
+              placeholder="¿De dónde nos visitas?"
+              className={`w-full ${errors.option && 'p-invalid'}`}
+            />
+          )}
+        />
+        {errors.option && (
+          <>
+            <br/>
+          <span className="text-red-500 text-sm mt-1">
+            {errors.option.message}
+          </span>
+          </>
+        )}
+      </div>
       <Button label="Enviar" icon="pi pi-check" type="submit" className="mt-10" />
     </form>
 
